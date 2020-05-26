@@ -1,0 +1,1 @@
+select ORIGIN, REPLACE(REPLACE(NAME, '\n', ''), '\r', '') as NAME from airport;

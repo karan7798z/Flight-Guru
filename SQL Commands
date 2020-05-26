@@ -1,0 +1,41 @@
+CREATE TABLE airline(
+IATA_CODE varchar(10) not null PRIMARY KEY,
+AIRLINE varchar(200)
+);
+
+CREATE TABLE airport(
+ORIGIN varchar(10) not null PRIMARY KEY,
+NAME varchar(200));
+
+CREATE TABLE flight(
+FL_DATE date,
+OP_CARRIER varchar(10),
+ORIGIN varchar(10),
+DEST varchar(10),
+DEP_DELAY varchar(100),
+ARR_DELAY varchar(100),
+DIVERTED varchar(100),
+ACTUAL_ELAPSED_TIME varchar(100),
+MONTH int,
+FOREIGN KEY (ORIGIN) references airport(ORIGIN),
+FOREIGN KEY (DEST) references airport(ORIGIN),
+FOREIGN KEY(OP_CARRIER) references airline(IATA_CODE)
+);
+
+LOAD DATA LOCAL INFILE '/home/centos/airline.csv' 
+INTO TABLE airline	 
+FIELDS TERMINATED BY ',' 	
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE '/home/centos/airport.csv' 
+INTO TABLE airport	 
+FIELDS TERMINATED BY ',' 	
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';		
+
+LOAD DATA LOCAL INFILE '/home/centos/flight.csv' 
+INTO TABLE flight
+FIELDS TERMINATED BY ',' 	
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
