@@ -19,7 +19,7 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
 * Required Packages to be installed: numpy, pandas, scipy, Flask.
 
 ## Phases
-* Download dataset from [here] (#), extract the zip file and copy it to host
+* Download dataset from [here] (https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018), extract the zip file and copy it to host
 
 ### 1. ETL:
 * **etl.py**: This python file reads the dataset from 2018 to 2014 using dataframe, removes unwanted attributes, extract month from date column and adds a new column into the Dataframe. The Dataframes for each year is split into two halves and loaded into new csv. The reason to split the dataset is to make it easy to load it on the cluster.
