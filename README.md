@@ -27,9 +27,9 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
 
 ### 2. API:
 * api2.py: This file contains the code written for hosting API’s. We have used Python’s Flask Library for this. We have created 3 API’s -
-   a. /getAllAirports: This API is called by the front end for fetching the list of airports to be displayed in the drop downs of Origin and Destination. It essentially calls/executes the SQL Query that fetches Airport Code and Name from airport table.
-   b. /getBestFlights: This API is called by the front end for fetching the best airlines (ones that have least delay, top 5 of those). It essentially calls/executes the SQL query that fetches Airline Name, Airline Code, Average Delay faced (average of departure delay and arrival delay) from the join of flight and airline table.
-   c. /getTopDestinations:ThisAPIiscalledbythefrontendforfetchingthelist
+   1. /getAllAirports: This API is called by the front end for fetching the list of airports to be displayed in the drop downs of Origin and Destination. It essentially calls/executes the SQL Query that fetches Airport Code and Name from airport table.
+   2. /getBestFlights: This API is called by the front end for fetching the best airlines (ones that have least delay, top 5 of those). It essentially calls/executes the SQL query that fetches Airline Name, Airline Code, Average Delay faced (average of departure delay and arrival delay) from the join of flight and airline table.
+   3. /getTopDestinations:ThisAPIiscalledbythefrontendforfetchingthelist
 of best destinations that the user can plan on visiting. This essentially calls/executes the SQL query that fetches the list of destinations, on the basis of the maximum flights that have flown to a destination, from user’s origin location, during his intended period of travel. It is based on the assumption that the more the number of flights going to a location, more popular that place is at a given time.
  
 ### 3. UI:
