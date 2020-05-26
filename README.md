@@ -5,7 +5,7 @@ The project aims at creating a system that would help the customer with their tr
 
 ## Algorithm
 * First, we perform etl on the datasets to remove unwanted values and attributes, and load the data in appropriately in the tables.
-* The transformed data sets are loaded on the MariaDB Galera Cluster.
+* The transformed data sets are loaded on the MariaDB Galera Cluster, which has been setup on 3 AWS EC2 Instances.
 * Input is taken from the user through a web page and passed to an API. Input
 includes - Origin, Destination and Travel Date.
 * API executes the SQL queries on the database and sends the output back to the
