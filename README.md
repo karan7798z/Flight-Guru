@@ -33,4 +33,4 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
  
 ### 3. UI:
 * The UI displays the information collated from the API calls, through charts. There are 2 main charts. One that displays Best Flights for a user, and another that displays the Best Destinations that a user can visit. The Best destination list is clickable, and clicking on a destination from that list, displays the best flights for that destination in return.
-* The entire UI repository, is contained in the zip file – birds-master.zip.
+* The entire UI repository, is contained in the zip file – **birds-master.zip**.
