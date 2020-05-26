@@ -27,12 +27,11 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
 
 ### 2. API:
 * api2.py: This file contains the code written for hosting API’s. We have used Python’s Flask Library for this. We have created 3 API’s -
-*. a. /getAllAirports: This API is called by the front end for fetching the list of airports to be displayed in the drop downs of Origin and Destination. It essentially calls/executes the SQL Query that fetches Airport Code and Name from airport table.
-*. b. /getBestFlights: This API is called by the front end for fetching the best airlines (ones that have least delay, top 5 of those). It essentially calls/executes the SQL query that fetches Airline Name, Airline Code, Average Delay faced (average of departure delay and arrival delay) from the join of flight and airline table.
-*. c. /getTopDestinations:ThisAPIiscalledbythefrontendforfetchingthelist
+  - a. /getAllAirports: This API is called by the front end for fetching the list of airports to be displayed in the drop downs of Origin and Destination. It essentially calls/executes the SQL Query that fetches Airport Code and Name from airport table.
+  - b. /getBestFlights: This API is called by the front end for fetching the best airlines (ones that have least delay, top 5 of those). It essentially calls/executes the SQL query that fetches Airline Name, Airline Code, Average Delay faced (average of departure delay and arrival delay) from the join of flight and airline table.
+  - c. /getTopDestinations:ThisAPIiscalledbythefrontendforfetchingthelist
 of best destinations that the user can plan on visiting. This essentially calls/executes the SQL query that fetches the list of destinations, on the basis of the maximum flights that have flown to a destination, from user’s origin location, during his intended period of travel. It is based on the assumption that the more the number of flights going to a location, more popular that place is at a given time.
  
 ### 3. UI:
 * The UI displays the information collated from the API calls, through charts. There are 2 main charts. One that displays Best Flights for a user, and another that displays the Best Destinations that a user can visit. The Best destination list is clickable, and clicking on a destination from that list, displays the best flights for that destination in return.
 * The entire UI repository, is contained in the zip file – birds-master.zip.
-  
