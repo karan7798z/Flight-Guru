@@ -1,5 +1,5 @@
 # Flight-Guru
-Final Project for the course - Advanced Database Systems at Texas A&amp;M University
+Final Project for the course - Advanced Database Management at Texas A&amp;M University
 
 The project aims at creating a system that would help the customer with their travel plans. As we know, flight delays can result in disruption of someone’s travel plan. The system that we plan on designing and implementing will aid the customer by suggesting the flights with minimum chances of delay based on past data. Also, it will suggest the best destination to visit during a particular time of the year and the best flights to take for it.
 
