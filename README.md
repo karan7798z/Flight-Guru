@@ -27,7 +27,7 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
 
 ![Logical ERD](Project%20Phase%20I%20-%20Logical%20ERD.png)
 
-![Physical ERD](Project Phase I - Physical ERD.png)
+![Physical ERD](Project%20Phase%20I%20-%20Physical%20ERD.png)
 
 * **MongoDB Queries**: In this file, I have compiled all the queries which were executed on the MongoDB instance. There are a total of 6 queries in this. 
     1. First query is for Importing the Data
