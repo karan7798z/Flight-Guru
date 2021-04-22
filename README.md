@@ -25,9 +25,9 @@ An account on AWS to setup MariaDB Galera cluster of three nodes on EC2 platform
 * **etl.py**: This python file reads the dataset from 2018 to 2014 using dataframe, removes unwanted attributes, extract month from date column and adds a new column into the Dataframe. The Dataframes for each year is split into two halves and loaded into new csv. The reason to split the dataset is to make it easy to load it on the cluster.
 * **SQL Statements**: In this file, there are 3 create table scripts. These scripts create 3 tables - flight (which will contain the overall flight data), airline (which will contain the airline Codes and Names) and airport (which will contain the airport Codes and Names). These tables are created by following the ERD Representations shown in the files – Project Phase I – Logical ERD.png & Project Phase I – Physical ERD.png that contain the Logical and Physical ERD’s respectively. After these 3 create table scripts, there are 3 Load data scripts that load these tables one by one, with their respective intended data source csv files.
 
-![Project Phase I - Logical ERD.png]
+![Project Phase I - Logical ERD](Project Phase I - Logical ERD.png)
 
-![Project Phase I - Physical ERD.png]
+![Project Phase I - Physical ERD](Project Phase I - Physical ERD.png)
 
 * **MongoDB Queries**: In this file, I have compiled all the queries which were executed on the MongoDB instance. There are a total of 6 queries in this. 
     1. First query is for Importing the Data
